@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-pessoal-sistemas-agendamento-de-marido-de-aluguel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianabussolo/portfolio-pessoal-sistemas-agendamento-de-marido-de-aluguel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/adrianabussolo/portfolio-pessoal-sistemas-agendamento-de-marido-de-aluguel/issues"
+  },
+  "homepage": "https://github.com/adrianabussolo/portfolio-pessoal-sistemas-agendamento-de-marido-de-aluguel#readme",
+  "dependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^11.7.4"
+  },
+  "devDependencies": {
+    "cypress": "^13.7.3"
+  }
+}
