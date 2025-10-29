@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,7 +21,12 @@
   "homepage": "https://github.com/adrianabussolo/portfolio-pessoal-sistemas-agendamento-de-marido-de-aluguel#readme",
   "dependencies": {
     "chai": "^4.3.10",
-    "mocha": "^11.7.4"
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mocha": "^11.7.4",
+    "swagger-jsdoc": "^6.2.8",
+  "swagger-ui-express": "^4.1.6",
+     "js-yaml": "^4.1.0"
   },
   "devDependencies": {
     "cypress": "^13.7.3"
