@@ -12,6 +12,6 @@ exports.login = (req, res) => {
   if (username !== usuario.username || password !== usuario.password) {
     return res.status(401).json({ erro: 'Credenciais inválidas' });
   }
-  const token = jwt.sign({ id: usuario.id, username: usuario.username }, process.env.JWT_SECRET || 'segredo', { expiresIn: '1h' });
+  const token = jwt.sign({ id: usuario.id, username: usuario.username }, process.env.JWT_SECRET || 'segredo', { expiresIn: '2d' });
   res.json({ token });
 };
