@@ -94,6 +94,52 @@ paths:
           description: Serviço não encontrado
         '401':
           description: Token JWT ausente ou inválido
+    put:
+      summary: Atualiza um serviço existente
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ServicoInput'
+      responses:
+        '200':
+          description: Serviço atualizado com sucesso
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Servico'
+        '400':
+          description: Dados inválidos
+        '404':
+          description: Serviço não encontrado
+        '401':
+          description: Token JWT ausente ou inválido
+    delete:
+      summary: Remove um serviço
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Serviço removido com sucesso
+        '404':
+          description: Serviço não encontrado
+        '401':
+          description: Token JWT ausente ou inválido
 components:
   securitySchemes:
     bearerAuth:

@@ -3,7 +3,7 @@
 API RESTful para agendamento de serviços de marido de aluguel, desenvolvida em Node.js com Express, autenticação JWT e documentação Swagger.
 
 ## Funcionalidades
-- Cadastro, listagem, atualização e remoção de serviços
+- Login, listagem, atualização e remoção de serviços
 - Autenticação de usuários via JWT
 - Documentação interativa via Swagger UI
 - Armazenamento dos dados em memória
@@ -54,6 +54,8 @@ Acesse `/docs` para visualizar e testar os endpoints da API.
 - O banco de dados é em memória, os dados são perdidos ao reiniciar a aplicação.
 - Para customizar os modelos ou endpoints, edite o arquivo `resources/swagger.yaml`.
 
----
+## Coleção Postman
 
-Desenvolvido para fins de demonstração e estudo.
+[Baixar coleção do Postman](./postman/api-marido-de-aluguel.postman_collection.json)
+
+Importe este arquivo no Postman para testar rapidamente os endpoints da API.

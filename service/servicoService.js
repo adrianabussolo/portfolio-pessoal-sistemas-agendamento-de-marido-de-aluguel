@@ -1,4 +1,4 @@
-const Servico = require('../model/Servico');
+const Servico = require('../model/servico');
 const servicos = require('../model/servicosDb');
 const { v4: uuidv4 } = require('uuid');
 
@@ -17,6 +17,12 @@ class ServicoService {
     return servico;
   }
 
+  static atualizar(id, dados) {
+    const idx = servicos.findIndex(s => s.id === id);
+    if (idx === -1) return null;
+    servicos[idx] = { ...servicos[idx], ...dados };
+    return servicos[idx];
+  }
 }
 
 module.exports = ServicoService;

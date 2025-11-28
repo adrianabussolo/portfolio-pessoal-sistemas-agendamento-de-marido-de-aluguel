@@ -1,0 +1,43 @@
+{
+  "info": {
+    "_postman_id": "12345678-1234-1234-1234-1234567890ab",
+    "name": "API Marido de Aluguel",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Listar Serviços",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/servicos",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["servicos"]
+        }
+      }
+    },
+    {
+      "name": "Criar Serviço",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"cliente\": \"Maria\",\n  \"descricao\": \"Instalação de prateleira\",\n  \"data\": \"2025-12-01\",\n  \"status\": \"pendente\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/servicos",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["servicos"]
+        }
+      }
+    }
+  ]
+}
